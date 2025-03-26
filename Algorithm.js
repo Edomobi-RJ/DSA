@@ -1,4 +1,22 @@
-var y = 20
-console.log(y)
+const loadText = document.querySelector('.loading-text')
+const RJ = document.querySelector('.RJ')
 
-console.log("jdjkd")
+let load = 0
+
+let int = setInterval(blurring, 30)
+
+function blurring() {
+    load++
+
+   if (load > 99) {
+      clearInterval(int)
+   }
+
+   loadText.innerText = `${load}%`
+   loadText.Style.opacity = scale(load, 0, 100, 1, 0)
+   RJ.Style.filter = `blur(${scale(load, 0, 100, 30, 0)})`
+}
+const scale =(num, in_min, in_max, out_min, out_max) => {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+}
+ 

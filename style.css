@@ -1,0 +1,32 @@
+@import url(https://th.bing.com/th?id=OIP.TgpHnp_eEN1xlnSDfhhD9QAAAA&w=298&h=222&c=10&rs=1&qlt=99&bgcl=fffffe&r=0&o=6&dpr=1.1&pid=23.1);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu' , sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.RJ {
+    background: url('https://th.bing.com/th?id=OIP.TgpHnp_eEN1xlnSDfhhD9QAAAA&w=298&h=222&c=10&rs=1&qlt=99&bgcl=fffffe&r=0&o=6&dpr=1.1&pid=23.1') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
